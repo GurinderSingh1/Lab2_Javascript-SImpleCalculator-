@@ -16,15 +16,15 @@ router.get('/', function (req, res) {
         }
         else if (req.query.method === 'subtract') {
             var result1 = parseInt(req.query.x) - parseInt(req.query.y);
-            console.log(req.query.x + ' - ' + req.query.y + ' = ' + result);
+            console.log(req.query.x + ' - ' + req.query.y + ' = ' + result1);
         }
         else if (req.query.method === 'multiply') {
             var result2 = parseInt(req.query.x) * parseInt(req.query.y);
-            console.log(req.query.x + ' * ' + req.query.y + ' = ' + result);
+            console.log(req.query.x + ' * ' + req.query.y + ' = ' + result2);
         }
         else if (req.query.method === 'divide') {
             var result3 = parseInt(req.query.x) / parseInt(req.query.y);
-            console.log(req.query.x + ' / ' + req.query.y + ' = ' + result);
+            console.log(req.query.x + ' / ' + req.query.y + ' = ' + result3);
         }
         else {
             console.log('Illegal Operations. Please Type: add, subtract, multiply, divide.');
